@@ -1,0 +1,30 @@
+export function addWeightToCommunity(map: any, community: any, weight: any): void;
+export function UndirectedLeidenAddenda(index: any, options: any): void;
+export class UndirectedLeidenAddenda {
+    constructor(index: any, options: any);
+    index: any;
+    random: (min: number, max: number) => number;
+    randomness: any;
+    rng: any;
+    resolution: any;
+    B: any;
+    C: number;
+    communitiesOffsets: any;
+    nodesSortedByCommunities: any;
+    communitiesBounds: any;
+    communityWeights: any;
+    degrees: any;
+    nonSingleton: Uint8Array<any>;
+    externalEdgeWeightPerCommunity: any;
+    belongings: any;
+    neighboringCommunities: any;
+    cumulativeIncrement: Float64Array<any>;
+    macroCommunities: any[];
+    groupByCommunities(): void;
+    communities(): any[];
+    mergeNodesSubset(start: any, stop: any): any;
+    refinePartition(): void;
+    split(): void;
+    zoomOut(): void;
+    onlySingletons(): boolean;
+}

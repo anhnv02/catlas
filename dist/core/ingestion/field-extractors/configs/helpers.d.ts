@@ -1,0 +1,10 @@
+import type { SyntaxNode } from '../../utils/ast-helpers.js';
+import type { FieldVisibility } from '../../field-types.js';
+export declare function hasKeyword(node: SyntaxNode, keyword: string): boolean;
+export declare function hasModifier(node: SyntaxNode, modifierType: string, keyword: string): boolean;
+export declare function findVisibility(node: SyntaxNode, keywords: ReadonlySet<FieldVisibility>, defaultVis: FieldVisibility, modifierNodeType?: string): FieldVisibility;
+export declare function firstChildText(node: SyntaxNode, types: ReadonlySet<string>): string | undefined;
+export declare function firstChildOfType(node: SyntaxNode, types: ReadonlySet<string>): SyntaxNode | null;
+export declare function typeFromField(node: SyntaxNode, fieldName: string): string | undefined;
+export declare function typeFromAnnotation(node: SyntaxNode): string | undefined;
+export declare function typeFromDescendant(node: SyntaxNode, types: ReadonlySet<string>): string | undefined;

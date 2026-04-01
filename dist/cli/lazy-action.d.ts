@@ -1,0 +1,1 @@
+export declare function createLazyAction<TModule extends Record<string, unknown>, TKey extends string & keyof TModule>(loader: () => Promise<TModule>, exportName: TKey): (...args: unknown[]) => Promise<void>;

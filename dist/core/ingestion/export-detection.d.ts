@@ -1,0 +1,14 @@
+import { type SyntaxNode } from './utils/ast-helpers.js';
+export type ExportChecker = (node: SyntaxNode, name: string) => boolean;
+export declare const tsExportChecker: ExportChecker;
+export declare const pythonExportChecker: ExportChecker;
+export declare const javaExportChecker: ExportChecker;
+export declare const csharpExportChecker: ExportChecker;
+export declare const goExportChecker: ExportChecker;
+export declare const rustExportChecker: ExportChecker;
+export declare const kotlinExportChecker: ExportChecker;
+export declare const cCppExportChecker: ExportChecker;
+export declare const phpExportChecker: ExportChecker;
+export declare const swiftExportChecker: ExportChecker;
+export declare const rubyExportChecker: ExportChecker;
+export declare const dartExportChecker: ExportChecker;

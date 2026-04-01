@@ -1,0 +1,11 @@
+import lbug from '@ladybugdb/core';
+export declare const realStdoutWrite: any;
+export declare const touchRepo: (repoId: string) => void;
+export declare const initLbug: (repoId: string, dbPath: string) => Promise<void>;
+export declare function initLbugWithDb(repoId: string, existingDb: lbug.Database, dbPath: string): Promise<void>;
+export declare const executeQuery: (repoId: string, cypher: string) => Promise<any[]>;
+export declare const executeParameterized: (repoId: string, cypher: string, params: Record<string, any>) => Promise<any[]>;
+export declare const closeLbug: (repoId?: string) => Promise<void>;
+export declare const isLbugReady: (repoId: string) => boolean;
+export declare const CYPHER_WRITE_RE: RegExp;
+export declare function isWriteQuery(query: string): boolean;

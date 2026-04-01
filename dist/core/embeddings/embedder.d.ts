@@ -1,0 +1,12 @@
+import { type FeatureExtractionPipeline } from '@huggingface/transformers';
+import { type EmbeddingConfig, type ModelProgress } from './types.js';
+export type ModelProgressCallback = (progress: ModelProgress) => void;
+export declare const getCurrentDevice: () => "dml" | "cuda" | "cpu" | "wasm" | null;
+export declare const initEmbedder: (onProgress?: ModelProgressCallback, config?: Partial<EmbeddingConfig>, forceDevice?: "dml" | "cuda" | "cpu" | "wasm") => Promise<FeatureExtractionPipeline>;
+export declare const isEmbedderReady: () => boolean;
+export declare const getEmbeddingDimensions: () => number;
+export declare const getEmbedder: () => FeatureExtractionPipeline;
+export declare const embedText: (text: string) => Promise<Float32Array>;
+export declare const embedBatch: (texts: string[]) => Promise<Float32Array[]>;
+export declare const embeddingToArray: (embedding: Float32Array) => number[];
+export declare const disposeEmbedder: () => Promise<void>;

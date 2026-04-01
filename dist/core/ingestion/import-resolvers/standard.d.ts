@@ -1,0 +1,11 @@
+import type { SuffixIndex } from './utils.js';
+import { SupportedLanguages } from '../../../config/supported-languages.js';
+import type { ImportResult, ImportResolverFn, ResolveCtx } from './types.js';
+import type { TsconfigPaths } from '../language-config.js';
+export declare const RESOLVE_CACHE_CAP = 100000;
+export declare const resolveImportPath: (currentFile: string, importPath: string, allFiles: Set<string>, allFileList: string[], normalizedFileList: string[], resolveCache: Map<string, string | null>, language: SupportedLanguages, tsconfigPaths: TsconfigPaths | null, index?: SuffixIndex) => string | null;
+export declare function resolveStandard(rawImportPath: string, filePath: string, ctx: ResolveCtx, language: SupportedLanguages): ImportResult;
+export declare const resolveJavascriptImport: ImportResolverFn;
+export declare const resolveTypescriptImport: ImportResolverFn;
+export declare const resolveCImport: ImportResolverFn;
+export declare const resolveCppImport: ImportResolverFn;
