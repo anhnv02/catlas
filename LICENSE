@@ -1,21 +1,16 @@
-MIT License
-
 Copyright (c) 2026 Anh Nguyen
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+END-USER LICENSE AGREEMENT (NON-COMMERCIAL)
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+This software ("Catlas") and associated documentation files are provided for PERSONAL, EDUCATIONAL, OR EVALUATION PURPOSES ONLY.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+STRICTLY NON-COMMERCIAL:
+You may not use this software for any commercial purposes. Commercial use includes, but is not limited to:
+- Selling or licensing the software or any of its components.
+- Using the software as part of a product or service that generates revenue.
+- Integrating the software into proprietary internal tools for commercial, corporate, or enterprise operations.
+- Providing access to the software to third parties for a fee.
+
+Any alternative use of the software requires a direct, explicitly written commercial license agreement from the copyright holder (Anh Nguyen).
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

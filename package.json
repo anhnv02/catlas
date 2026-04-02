@@ -1,6 +1,6 @@
 {
   "name": "@anhnguyen02/catlas",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Graph-powered code intelligence for AI agents.",
   "files": [
     "dist",
@@ -37,7 +37,7 @@
     "claude"
   ],
   "author": "anhnv02",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anhnv02/catlas.git"
