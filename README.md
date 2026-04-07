@@ -32,33 +32,40 @@ npx @anhnguyen02/catlas analyze
 
 ---
 
-## 🛠 Usage
+## 🛠 CLI Reference
 
-### Analyze a Repository
+| Command | Description |
+|---------|-------------|
+| `analyze` | Initialize or rebuild the knowledge graph for a repository. |
+| `list` | Enumerate all registered repositories and their stats. |
+| `status` | Retrieve index health for the current repository context. |
+| `query` | Search execution flows via concept-based semantic lookup. |
+| `context` | 360-degree symbol inspection: call graph and flow participation. |
+| `impact` | Blast radius analysis: transitively map structural dependants. |
+| `cypher` | Execute raw Cypher against the underlying knowledge graph. |
+| `ui` | Start local web UI dashboard for code intelligence overview. |
+| `eval-server` | Start persistence daemon for low-latency tool access. |
+| `clean` | Purge Catlas index and registry state. |
 
-Initialize the knowledge engine and build the graph for your current directory:
+### 🧩 MCP Tools Reference
 
-```bash
-catlas analyze
-```
+When connected via Model Context Protocol, Catlas exposes these tools to AI agents:
 
-### Search the Graph
-
-Find execution flows or concepts using the query tool:
-
-```bash
-catlas query "authentication flow"
-```
-
-### Deep Context
-
-Get a 360-degree view of any code symbol (callers, callees, and functional neighbors):
-
-```bash
-catlas context "validateUser"
-```
+| Tool | Purpose |
+|------|---------|
+| `list_repos` | List all indexed repositories available for analysis. |
+| `query` | Concept-based semantic search for execution flows. |
+| `context` | 360-degree view of a single code symbol (callers, callees). |
+| `impact` | Analyze the blast radius of changing a code symbol. |
+| `detect_changes` | Trace the impact of uncommitted git changes on execution flows. |
+| `rename` | Multi-file coordinated symbol rename via the knowledge graph. |
+| `route_map` | Map API routes to frontend components and backend handlers. |
+| `tool_map` | Inspect MCP/RPC tool definitions and their handlers. |
+| `shape_check` | Validate API response shapes against their consumers. |
+| `api_impact` | Risk assessment for changing an API endpoint. |
 
 ---
+
 
 ## 🏗 How it Works
 
