@@ -1,12 +1,14 @@
+import { z } from 'zod';
 import { KnowledgeEngine, RepoHandle } from '../../core/knowledge-engine.js';
 export interface MCPToolDefinition {
     name: string;
     description: string;
-    inputSchema: {
+    inputSchema?: {
         type: 'object';
         properties: Record<string, any>;
         required?: string[];
     };
+    zodSchema?: z.ZodObject<any>;
 }
 export declare abstract class MCPTool {
     abstract get definition(): MCPToolDefinition;

@@ -1,5 +1,10 @@
 export interface BM25SearchResult {
+    nodeId: string;
+    name?: string;
+    type: string;
     filePath: string;
+    startLine?: number;
+    endLine?: number;
     score: number;
     rank: number;
 }

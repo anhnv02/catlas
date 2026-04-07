@@ -1,15 +1,15 @@
 import { type BM25SearchResult } from './bm25-index.js';
 import type { SemanticSearchResult } from '../embeddings/types.js';
 export interface HybridSearchResult {
+    nodeId?: string;
+    name?: string;
+    type?: string;
     filePath: string;
+    startLine?: number;
+    endLine?: number;
     score: number;
     rank: number;
     sources: ('bm25' | 'semantic')[];
-    nodeId?: string;
-    name?: string;
-    label?: string;
-    startLine?: number;
-    endLine?: number;
     bm25Score?: number;
     semanticScore?: number;
 }

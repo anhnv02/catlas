@@ -26,12 +26,14 @@ export interface CodebaseContext {
 export declare function isTestFilePath(filePath: string): boolean;
 export declare class KnowledgeEngine {
     private initializedRepos;
-    private reinitPromises;
     getContext(repo: RepoHandle): Promise<CodebaseContext>;
     private lastStalenessCheck;
     constructor();
     private confidenceForRelType;
+    private initPromises;
+    private checkPromises;
     ensureInitialized(repo: RepoHandle): Promise<void>;
+    private runInitialization;
     private logError;
     query(repo: RepoHandle, params: {
         query: string;
