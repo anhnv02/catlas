@@ -1,1 +1,1 @@
-export const yieldToEventLoop=()=>new Promise(_0x5eca10=>setImmediate(_0x5eca10));
+export const yieldToEventLoop=()=>new Promise(_0x13b877=>setImmediate(_0x13b877));

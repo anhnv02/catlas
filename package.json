@@ -1,6 +1,6 @@
 {
   "name": "@anhnguyen02/catlas",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Graph-powered code intelligence for AI agents.",
   "files": [
     "dist",
